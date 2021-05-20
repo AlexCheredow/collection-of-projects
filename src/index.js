@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 
 import { App, Home, About } from "./App/App";
+import { Polindrom } from "./components/Polindrom/index";
 
 const history = createBrowserHistory();
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
           </Route>
           <Route path="/home" component={() => <Home />} />
           <Route path="/about" component={About} />
+          <Route path="/polindrom" component={Polindrom} />
         </Switch>
       </Container>
     </Router>

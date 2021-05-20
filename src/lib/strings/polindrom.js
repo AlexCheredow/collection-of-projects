@@ -4,7 +4,7 @@
  * @returns {boolean}
  */
 function polindrom(str) {
-  let newStr, newStrArr /*pal*/;
+  let newStr, newStrArr;
 
   if (typeof str !== "number") {
     newStr = str.toLowerCase();

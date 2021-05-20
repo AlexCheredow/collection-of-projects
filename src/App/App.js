@@ -3,8 +3,6 @@ import { Accordion, Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
-import check from "../strings/polindrom";
-
 export const Home = () => (
   <div>
     <h2>Home</h2>
@@ -35,7 +33,9 @@ export function App() {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              <li>1</li>
+              <li>
+                <Link to="/polindrom">Полиндром</Link>
+              </li>
               <li>2</li>
               <li>3</li>
             </ul>

@@ -1,6 +1,8 @@
 import polindrom from "../lib/strings/polindrom";
 
 function check(form) {
+  form.preventDefault();
+
   const formData = new FormData(form);
   const testString = formData.get("testString");
   const divSummary = document.getElementById("summary");
