@@ -3,22 +3,8 @@
  * @param {string} str Строка для проверки
  * @returns {boolean}
  */
-function polindrom(str) {
-  let newStr, newStrArr;
-
-  if (typeof str !== "number") {
-    newStr = str.toLowerCase();
-  } else {
-    newStr = str.toString();
-  }
-  // remove spaces
-  newStr = newStr.replace(/\s/g, "");
-  newStrArr = newStr.split("").reverse().join("");
-
-  if (++newStrArr !== isNaN) {
-    ++newStrArr;
-  }
-
-  return newStrArr === newStr;
+function polindrom(str = "") {
+  const newStr = `${str}`.toLowerCase().replace(/\s/g, "");
+  return newStr === newStr.split("").reverse().join("");
 }
 export default polindrom;

@@ -1,7 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import FormPolindrom from "./FormPolindrom";
 import HeaderPolindrom from "./headerPolindrom";
+import FormPolindrom from "./FormPolindrom";
+
 
 export function Polindrom() {
   return (

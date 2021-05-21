@@ -2,23 +2,24 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
 import polindrom from "../../lib/strings/polindrom";
+import DescriptionResult from "./DescriptionResult";
 
 const FormPolindrom = () => {
   // Задали хук на стейт
-  const [value, setValue] = useState("");
+  const [textValue, setTextValue] = useState("");
 
-  const [valid, setValid] = useState(true);
+  const [validResult, setValidResult] = useState(true);
 
   // Задали обработчик на изменение текстового значения
   // Это значение в текстовом инпуте идёт в стейт [value, setValue]
   const onChange = (e) => {
     const { value } = e.target;
-    setValue(value);
+    setTextValue(value);
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setValid(polindrom(value));
+    setValidResult(polindrom(textValue));
   };
 
   return (
@@ -29,18 +30,20 @@ const FormPolindrom = () => {
           <Form.Control
             placeholder="Введите что-то"
             id="formInputText"
-            value={value}
+            value={textValue}
             onChange={onChange}
-            isValid={valid}
-            isInvalid={!valid}
+            isValid={validResult}
+            isInvalid={!validResult}
           />
           <Form.Text className="text-muted">
             Введите строку, которую хотите проверить на палиндром.
           </Form.Text>
         </Form.Group>
-        <Button type="submit">Проверка</Button>
+        <Button type="submit" disabled={!textValue}>
+          Проверка
+        </Button>
       </Form>
-      <div className="alert d-none" role="alert" id="summary"></div>
+      <DescriptionResult result={validResult} value={textValue} />
     </div>
   );
 };
