@@ -1,13 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Header from "../header";
-import FormPolindrom from "./FormPolindrom";
+import FormRevers from "./FormRevers";
 
-export function Polindrom() {
+export function Revers() {
   return (
     <Container>
       <Header />
-      <FormPolindrom />
+      <FormRevers />
     </Container>
   );
 }

@@ -17,13 +17,6 @@ function DescriptionResult({ value, result }) {
       </Alert>
     ));
   }
-  if (result === null) {
-    return ["dark"].map((variant, idx) => (
-      <Alert key={idx} variant={variant}>
-        Введите что-то!
-      </Alert>
-    ));
-  }
 }
 
 export default DescriptionResult;

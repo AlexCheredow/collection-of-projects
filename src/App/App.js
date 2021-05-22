@@ -36,7 +36,9 @@ export function App() {
               <li>
                 <Link to="/polindrom">Полиндром</Link>
               </li>
-              <li>2</li>
+              <li>
+                <Link to="/revers">Реверс</Link>
+              </li>
               <li>3</li>
             </ul>
           </Card.Body>

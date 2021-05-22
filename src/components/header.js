@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const HeaderPolindrom = () => {
+const Header = () => {
   return (
     <>
       <div className="col ">
@@ -13,4 +13,4 @@ const HeaderPolindrom = () => {
   );
 };
 
-export default HeaderPolindrom;
+export default Header;
