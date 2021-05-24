@@ -54,7 +54,9 @@ export function App() {
           <Card.Body>
             <strong>Список решений задач, где используются числа</strong>
             <ul>
-              <li>1</li>
+              <li>
+                <Link to="/Compare">Найти миинмальное число из двух</Link>
+              </li>
               <li>2</li>
               <li>3</li>
               <check></check>

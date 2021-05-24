@@ -8,6 +8,7 @@ import { Container } from "react-bootstrap";
 import { App, Home, About } from "./App/App";
 import { Polindrom } from "./components/Polindrom/index";
 import { Revers } from "./components/Revers/index";
+import Compare from "./components/Compare/Compare";
 
 const history = createBrowserHistory();
 ReactDOM.render(
@@ -22,6 +23,7 @@ ReactDOM.render(
           <Route path="/about" component={About} />
           <Route path="/polindrom" component={Polindrom} />
           <Route path="/revers" component={Revers} />
+          <Route path="/compare" component={Compare} />
         </Switch>
       </Container>
     </Router>
