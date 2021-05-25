@@ -57,10 +57,7 @@ class Compare extends Component {
               Введите второе число для сравнения.
             </Form.Text>
           </Form.Group>
-          <Button
-            type="submit"
-            disabled={!(this.state.value1, this.state.value2)}
-          >
+          <Button type="submit" disabled={value1 === "" || value2 === ""}>
             Сравнить
           </Button>
         </Form>
