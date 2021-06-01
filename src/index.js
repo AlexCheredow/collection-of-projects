@@ -10,6 +10,7 @@ import { Polindrom } from "./components/Polindrom/index";
 import { Revers } from "./components/Revers/index";
 import Compare from "./components/Compare/Compare";
 import FooterPage from "./components/FooterPage/FooterPage";
+import Converter from "./components/Converter/index";
 
 const history = createBrowserHistory();
 ReactDOM.render(
@@ -32,6 +33,7 @@ ReactDOM.render(
             <Route path="/polindrom" component={Polindrom} />
             <Route path="/revers" component={Revers} />
             <Route path="/compare" component={Compare} />
+            <Route path="/converter" component={Converter} />
           </Switch>
         </Container>
       </Router>
