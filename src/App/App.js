@@ -22,7 +22,6 @@ export function App() {
               <li>
                 <Link to="/revers">Реверс</Link>
               </li>
-              <li>3</li>
             </ul>
           </Card.Body>
         </Accordion.Collapse>
@@ -40,8 +39,29 @@ export function App() {
               <li>
                 <Link to="/Compare">Найти миинмальное число из двух</Link>
               </li>
-              <li>2</li>
-              <li>3</li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header>
+          <Accordion.Toggle as={Button} eventKey="1" variant="link">
+            Приложения
+          </Accordion.Toggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="1">
+          <Card.Body>
+            <strong>Приложения</strong>
+            <ul>
+              <li>
+                <a
+                  href="https://test-app-git-main-alexcheredow.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Радио
+                </a>
+              </li>
             </ul>
           </Card.Body>
         </Accordion.Collapse>
