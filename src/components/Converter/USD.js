@@ -23,7 +23,6 @@ export default class USD extends Component {
         (data) => {
           const { Value } = data.Valute.USD;
 
-          console.log({ USD });
           this.setState({
             isLoaded: true,
             USD: Value,

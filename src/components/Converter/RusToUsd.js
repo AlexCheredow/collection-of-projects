@@ -7,7 +7,10 @@ const RusToUsd = ({ usd }) => {
   const onChange = (e) => {
     setValue(e.target.value);
   };
-  let calcResult = value ? Number.parseFloat(value) * usd : 0;
+  let calcResult = value ? Number.parseFloat(value) / usd : 0;
+  let result = !isNaN(calcResult)
+    ? "Доллары США: " + calcResult.toFixed(2)
+    : "Вводите валюту в числовом формате";
 
   return (
     <Form.Row>
@@ -21,7 +24,7 @@ const RusToUsd = ({ usd }) => {
         <Form.Text className="text-muted">Введите количество рублей.</Form.Text>
       </Form.Group>
       <Form.Group as={Col}>
-        <Form.Label>{`Доллары США: ${calcResult.toFixed(2)}`}</Form.Label>
+        <Form.Label>{result}</Form.Label>
       </Form.Group>
     </Form.Row>
   );
