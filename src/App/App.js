@@ -45,11 +45,11 @@ export function App() {
       </Card>
       <Card>
         <Card.Header>
-          <Accordion.Toggle as={Button} eventKey="1" variant="link">
+          <Accordion.Toggle as={Button} eventKey="2" variant="link">
             Приложения
           </Accordion.Toggle>
         </Card.Header>
-        <Accordion.Collapse eventKey="1">
+        <Accordion.Collapse eventKey="2">
           <Card.Body>
             <strong>Приложения</strong>
             <ul>
