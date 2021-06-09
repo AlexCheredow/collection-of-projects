@@ -7,7 +7,8 @@ const RusToUsd = ({ usd }) => {
   const onChange = (e) => {
     setValue(e.target.value);
   };
-  let calcResult = value ? Number.parseFloat(value) * usd : 0;
+
+  let calcResult = value ? 1 * value * usd : 0;
   let result = !isNaN(calcResult)
     ? "Российские рубли: " + calcResult.toFixed(2)
     : "Вводите валюту в числовом формате";

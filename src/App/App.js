@@ -22,9 +22,6 @@ export function App() {
               <li>
                 <Link to="/revers">Реверс</Link>
               </li>
-              <li>
-                <Link to="/converter">Конвертер</Link>
-              </li>
             </ul>
           </Card.Body>
         </Accordion.Collapse>
@@ -64,6 +61,9 @@ export function App() {
                 >
                   Радио
                 </a>
+              </li>
+              <li>
+                <Link to="/converter">Конвертер</Link>
               </li>
             </ul>
           </Card.Body>

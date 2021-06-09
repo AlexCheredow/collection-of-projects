@@ -7,11 +7,11 @@ const RusToUsd = ({ usd }) => {
   const onChange = (e) => {
     setValue(e.target.value);
   };
-  let calcResult = value ? Number.parseFloat(value) / usd : 0;
+  let calcResult = value ? (1 * value) / usd : 0;
   let result = !isNaN(calcResult)
     ? "Доллары США: " + calcResult.toFixed(2)
     : "Вводите валюту в числовом формате";
-
+  console.log("calcResult :>> ", calcResult);
   return (
     <Form.Row>
       <Form.Group as={Col}>
